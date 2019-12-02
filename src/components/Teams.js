@@ -44,8 +44,9 @@ function useFetch() {
   };
 }
 
-export default function Teams({ match, location }) {
+export default function Teams(props) {
   const { teamNames, loading, error } = useFetch();
+  const { match, location } = props;
 
   if (error) {
     return <p className='center-text error'>{error}</p>;
@@ -57,8 +58,8 @@ export default function Teams({ match, location }) {
         loading={loading}
         title='Teams'
         list={teamNames}
-        location={location}
         match={match}
+        location={location}
       />
 
       {loading === false && location.pathname === '/teams' ? (

@@ -3,6 +3,7 @@ import { Redirect, Link } from 'react-router-dom';
 import { getTeamNames, getTeamsArticles } from '../api';
 import TeamLogo from './TeamLogo';
 import Team from './Team';
+import Loading from './Loading';
 import slug from 'slug';
 
 function teamPageReducer(state, action) {
@@ -56,9 +57,12 @@ function useFetch({ match }) {
     loading: state.loading
   };
 }
+// export default function TeamPage({ match }) {
 
-export default function TeamPage({ match }) {
-  const { teamNames, articles, loading } = useFetch({ match });
+export default function TeamPage(props) {
+  const { match } = props;
+  // console.log('match:', match)
+  const { teamNames, articles, loading } = useFetch({match});
   const { teamId } = match.params;
 
   if (loading === false && teamNames.includes(teamId) === false) {
@@ -70,7 +74,7 @@ export default function TeamPage({ match }) {
       <Team id={teamId}>
         {team =>
           team === null ? (
-            <h1>LOADING</h1>
+            <Loading />
           ) : (
             <div className='panel'>
               <TeamLogo id={teamId} />

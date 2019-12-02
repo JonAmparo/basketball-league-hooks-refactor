@@ -3,12 +3,13 @@ import { Route } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Article from './Article';
 import { getTeamsArticles } from '../api';
+
 import Loading from './Loading';
 
 function useFetch(match) {
   const [teamsArticles, setTeamsArticles] = React.useState(null);
   const [loading, setLoading] = React.useState(true);
-  const [error, setError] = React.useState(true);
+  const [error, setError] = React.useState(null);
 
   React.useEffect(() => {
     getTeamsArticles(match.params.teamId)
@@ -24,6 +25,12 @@ function useFetch(match) {
       });
   }, [match.params.teamId]);
 
+  React.useEffect(() => {
+    return () => {
+      console.log('cleaned up');
+    };
+  }, []);
+
   return {
     teamsArticles,
     loading,
@@ -32,7 +39,8 @@ function useFetch(match) {
 }
 
 export default function Articles({ match, location }) {
-  const { teamsArticles, loading, error } = useFetch((match = { ...match }));
+  const { teamsArticles, loading, error } = useFetch(match);
+  // const { teamsArticles, loading, error } = useFetch((match = { ...match }));
   const { params, url } = match;
   const { teamId } = params;
 
@@ -58,7 +66,7 @@ export default function Articles({ match, location }) {
           <Article articleId={match.params.articleId} teamId={teamId}>
             {article =>
               !article ? (
-                <h1>Loading</h1>
+                <Loading />
               ) : (
                 <div className='panel'>
                   <article className='article' key={article.id}>
