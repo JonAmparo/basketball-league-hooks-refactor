@@ -27,7 +27,7 @@ function useFetch(match) {
 
   React.useEffect(() => {
     return () => {
-      console.log('cleaned up');
+      console.log('testing clean up');
     };
   }, []);
 

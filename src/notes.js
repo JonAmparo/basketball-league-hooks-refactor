@@ -12,7 +12,7 @@
 
 // 3. Passing props or location & match is better?
 
-// 4. Clean up Articles
+// 4. Clean up Articles -- add clean ups to get rid of memory leaks
 // import unsubscribeTeamsArticles
 
 // useEffect

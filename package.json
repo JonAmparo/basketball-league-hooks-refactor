@@ -1,33 +1,48 @@
 {
   "name": "reactrouter-course-project",
   "version": "0.1.0",
-  "private": true,
+  "main": "index.js",
+  "keywords": [],
+  "description": "This was a project created and taught by Tyler Mcginnis in the React Router course. I took this project we've previously done, and fully converted it to use Hooks and more modern practices of React. ",
+  "author": "Tyler Mcginnis & Jonathan Amparo",
+  "license": "ISC",
   "dependencies": {
-    "prop-types": "^15.6.0",
-    "query-string": "^5.0.1",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-router-dom": "^4.2.2",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.9.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "^3.2.0",
-    "react-transition-group": "^2.2.1",
-    "slug": "^0.9.1"
+    "react-transition-group": "^4.3.0",
+    "slug": "^1.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
     ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "syntax-dynamic-import"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "copy-webpack-plugin": "^5.0.5",
+    "css-loader": "^3.2.1",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   }
 }

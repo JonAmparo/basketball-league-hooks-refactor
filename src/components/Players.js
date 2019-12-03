@@ -120,28 +120,3 @@ export default function Players(props) {
     </div>
   );
 }
-
-// export default class Players extends Component {
-//   state = {
-//     players: [],
-//     loading: true
-//   };
-//   componentDidMount() {
-//     const { location } = this.props;
-//     location.search
-//       ? this.fetchPlayers(parse(location.search).teamId)
-//       : this.fetchPlayers();
-//   }
-//   fetchPlayers = teamId => {
-//     getPlayers(teamId).then(players =>
-//       this.setState(() => ({
-//         loading: false,
-//         players
-//       }))
-//     );
-//   };
-//   render() {
-//     const { players, loading } = this.state;
-//     const { match, location } = this.props;
-//   }
-// }

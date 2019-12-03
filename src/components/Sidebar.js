@@ -28,7 +28,14 @@ function CustomLink({ to, children }) {
   );
 }
 
-export default function Sidebar({ title, list, loading, location, match, props }) {
+export default function Sidebar({
+  title,
+  list,
+  loading,
+  location,
+  match,
+  props
+}) {
   return loading === true ? (
     <Loading />
   ) : (
