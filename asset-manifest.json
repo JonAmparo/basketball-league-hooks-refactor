@@ -1,0 +1,37 @@
+{
+  "files": {
+    "static/js/0.cf8cd960.chunk.js": "/basketball-league-hooks-refactor/static/js/0.cf8cd960.chunk.js",
+    "static/js/0.cf8cd960.chunk.js.map": "/basketball-league-hooks-refactor/static/js/0.cf8cd960.chunk.js.map",
+    "static/js/1.e3ebc1e6.chunk.js": "/basketball-league-hooks-refactor/static/js/1.e3ebc1e6.chunk.js",
+    "static/js/1.e3ebc1e6.chunk.js.map": "/basketball-league-hooks-refactor/static/js/1.e3ebc1e6.chunk.js.map",
+    "main.css": "/basketball-league-hooks-refactor/static/css/main.c84ec4ec.chunk.css",
+    "main.js": "/basketball-league-hooks-refactor/static/js/main.8beb8ecb.chunk.js",
+    "main.js.map": "/basketball-league-hooks-refactor/static/js/main.8beb8ecb.chunk.js.map",
+    "runtime-main.js": "/basketball-league-hooks-refactor/static/js/runtime-main.f180a636.js",
+    "runtime-main.js.map": "/basketball-league-hooks-refactor/static/js/runtime-main.f180a636.js.map",
+    "static/js/4.514cc34b.chunk.js": "/basketball-league-hooks-refactor/static/js/4.514cc34b.chunk.js",
+    "static/js/4.514cc34b.chunk.js.map": "/basketball-league-hooks-refactor/static/js/4.514cc34b.chunk.js.map",
+    "static/js/5.105a2337.chunk.js": "/basketball-league-hooks-refactor/static/js/5.105a2337.chunk.js",
+    "static/js/5.105a2337.chunk.js.map": "/basketball-league-hooks-refactor/static/js/5.105a2337.chunk.js.map",
+    "static/js/6.7b99e1c1.chunk.js": "/basketball-league-hooks-refactor/static/js/6.7b99e1c1.chunk.js",
+    "static/js/6.7b99e1c1.chunk.js.map": "/basketball-league-hooks-refactor/static/js/6.7b99e1c1.chunk.js.map",
+    "static/js/7.8bb693ae.chunk.js": "/basketball-league-hooks-refactor/static/js/7.8bb693ae.chunk.js",
+    "static/js/7.8bb693ae.chunk.js.map": "/basketball-league-hooks-refactor/static/js/7.8bb693ae.chunk.js.map",
+    "static/js/8.9e7a7712.chunk.js": "/basketball-league-hooks-refactor/static/js/8.9e7a7712.chunk.js",
+    "static/js/8.9e7a7712.chunk.js.map": "/basketball-league-hooks-refactor/static/js/8.9e7a7712.chunk.js.map",
+    "static/js/9.1f7d337a.chunk.js": "/basketball-league-hooks-refactor/static/js/9.1f7d337a.chunk.js",
+    "static/js/9.1f7d337a.chunk.js.map": "/basketball-league-hooks-refactor/static/js/9.1f7d337a.chunk.js.map",
+    "static/js/10.be89cac2.chunk.js": "/basketball-league-hooks-refactor/static/js/10.be89cac2.chunk.js",
+    "static/js/10.be89cac2.chunk.js.map": "/basketball-league-hooks-refactor/static/js/10.be89cac2.chunk.js.map",
+    "index.html": "/basketball-league-hooks-refactor/index.html",
+    "precache-manifest.50641693acd2101ee85d5f4bd7fa9428.js": "/basketball-league-hooks-refactor/precache-manifest.50641693acd2101ee85d5f4bd7fa9428.js",
+    "service-worker.js": "/basketball-league-hooks-refactor/service-worker.js",
+    "static/css/main.c84ec4ec.chunk.css.map": "/basketball-league-hooks-refactor/static/css/main.c84ec4ec.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f180a636.js",
+    "static/js/4.514cc34b.chunk.js",
+    "static/css/main.c84ec4ec.chunk.css",
+    "static/js/main.8beb8ecb.chunk.js"
+  ]
+}
